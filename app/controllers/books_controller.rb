@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :set_book, only: %i[ show edit update destroy ]
+  before_action :set_book, only: %i[ show edit update destroy delete ]
 
   # GET /books or /books.json
   def index
@@ -17,6 +17,10 @@ class BooksController < ApplicationController
 
   # GET /books/1/edit
   def edit
+  end
+
+  # GET /books/1/delete
+  def delete
   end
 
   # POST /books or /books.json
@@ -52,7 +56,7 @@ class BooksController < ApplicationController
     @book.destroy!
 
     respond_to do |format|
-      format.html { redirect_to books_path, notice: "Book was successfully destroyed.", status: :see_other }
+      format.html { redirect_to root_path, notice: "Book was successfully destroyed.", status: :see_other }
       format.json { head :no_content }
     end
   end
