@@ -31,6 +31,9 @@ group :development, :test do
   gem "solid_cable"
 end
 
+# XML parsing library
+gem "rexml"
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
@@ -52,6 +55,9 @@ group :development, :test do
 
   # RSpec for TDD testing
   gem "rspec-rails"
+
+  # Ruby linter and formatter [https://github.com/rubocop/rubocop]
+  gem "rubocop", require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
