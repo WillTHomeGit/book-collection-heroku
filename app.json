@@ -1,0 +1,12 @@
+{
+  "name": "Book Collection",
+  "scripts": {
+    "postdeploy": "rails db:migrate"
+  },
+  "env": {
+    "RAILS_LOG_TO_STDOUT": "enabled"
+  },
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
