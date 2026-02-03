@@ -1,10 +1,11 @@
 {
   "name": "Book Collection",
   "scripts": {
-    "postdeploy": "rails db:migrate"
+    "postdeploy": "bundle exec rails db:migrate"
   },
   "env": {
-    "RAILS_LOG_TO_STDOUT": "enabled"
+    "RAILS_LOG_TO_STDOUT": "enabled",
+    "BUNDLE_WITHOUT": "development:test"
   },
   "addons": [
     "heroku-postgresql"
