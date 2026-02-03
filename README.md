@@ -1,6 +1,6 @@
 # README
 
-Book Collection 2 - Heroku Deployment Test
+Book Collection 2 - Heroku Deployment Test (Updated)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
