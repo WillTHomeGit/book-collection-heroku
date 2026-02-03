@@ -11,6 +11,6 @@ development:
 test:
   <<: *default
 
+# Production uses memory_store, not solid_cache (Heroku single database)
 production:
-  database: cache
   <<: *default
