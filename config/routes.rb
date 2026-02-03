@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root "user_books#index"
+  resources :user_books
+  resources :users
   resources :books do
     member do
       get :delete
@@ -14,6 +17,4 @@ Rails.application.routes.draw do
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
-  # Make the books index the home page
-  root "books#index"
 end
